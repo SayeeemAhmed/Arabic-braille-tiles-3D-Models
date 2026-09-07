@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Oriental Braille Project | Tactile Islamic Education</title>
+  
+  <!-- Google Fonts & Model Viewer Script -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+
+  <style>
+    :root {
+      --primary: #0F5257;
+      --accent: #C5A059;
+      --bg-light: #F8F9FA;
+      --text-dark: #2D3748;
+      --card-bg: #FFFFFF;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; color: var(--text-dark); background-color: var(--bg-light); line-height: 1.6; }
+
+    /* Navigation */
+    nav { background: #FFFFFF; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100; }
+    .nav-container { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.5rem; }
+    .brand { font-family: 'Amiri', serif; font-size: 1.6rem; font-weight: 700; color: var(--primary); text-decoration: none; }
+    .nav-links { display: flex; gap: 1.5rem; list-style: none; }
+    .nav-links a { text-decoration: none; color: var(--text-dark); font-weight: 600; font-size: 0.95rem; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--accent); }
+
+    /* Hero Section */
+    .hero { background: linear-gradient(135deg, var(--primary), #0B3C40); color: white; padding: 4rem 1.5rem; text-align: center; }
+    .hero h1 { font-family: 'Amiri', serif; font-size: 2.8rem; margin-bottom: 0.5rem; color: var(--accent); }
+    .hero p { font-size: 1.2rem; max-width: 700px; margin: 0 auto; opacity: 0.9; }
+
+    /* Layout Container */
+    .container { max-width: 1100px; margin: 0 auto; padding: 3rem 1.5rem; }
+
+    /* Mission Section */
+    .mission-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center; margin-bottom: 4rem; }
+    .mission-text h2 { font-size: 2rem; color: var(--primary); margin-bottom: 1rem; }
+    .mission-text p { margin-bottom: 1rem; font-size: 1.05rem; color: #4A5568; }
+    .mission-image img { width: 100%; border-radius: 12px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+
+    /* Section Styling */
+    .section-title { text-align: center; font-size: 2rem; color: var(--primary); margin-bottom: 2rem; }
+
+    /* Model Download Cards */
+    .model-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; margin-bottom: 4rem; }
+    .card { background: var(--card-bg); border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); padding: 1.5rem; border: 1px solid #E2E8F0; }
+    .card h3 { color: var(--primary); margin-bottom: 0.5rem; }
+    model-viewer { width: 100%; height: 300px; background-color: #EDF2F7; border-radius: 8px; margin: 1rem 0; }
+    
+    /* Buttons */
+    .btn-group { display: flex; gap: 0.8rem; }
+    .btn { display: inline-block; padding: 0.7rem 1.2rem; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.9rem; text-align: center; cursor: pointer; border: none; }
+    .btn-primary { background: var(--primary); color: white; flex: 1; }
+    .btn-primary:hover { background: #0B3C40; }
+    .btn-secondary { background: var(--accent); color: white; flex: 1; }
+    .btn-secondary:hover { background: #A88645; }
+
+    /* Form Section */
+    .form-container { background: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); max-width: 700px; margin: 0 auto 3rem auto; }
+    .form-group { margin-bottom: 1.2rem; }
+    .form-group label { display: block; font-weight: 600; margin-bottom: 0.4rem; color: var(--text-dark); }
+    .form-group input, .form-group textarea { width: 100%; padding: 0.8rem; border: 1px solid #CBD5E0; border-radius: 6px; font-family: inherit; }
+    .form-group textarea { resize: vertical; height: 120px; }
+
+    /* Footer */
+    footer { background: var(--primary); color: white; text-align: center; padding: 2rem 1.5rem; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <a href="#" class="brand">The Oriental Braille Project</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#models">3D Models</a></li>
+        <li><a href="#request">Request Model</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Header -->
+  <header class="hero">
+    <h1>The Oriental Braille Project</h1>
+    <p>Making Arabic education accessible and Islamic learning tactile for blind Muslim children worldwide.</p>
+  </header>
+
+  <div class="container">
+
+    <!-- Mission & About Section -->
+    <section id="about" class="mission-grid">
+      <div class="mission-text">
+        <h2>Empowering Young Readers</h2>
+        <p>Every child deserves the opportunity to learn and connect with sacred texts and Islamic supplications independently.</p>
+        <p><strong>The Oriental Braille Project</strong> produces open-source, 3D-printable tactile learning tiles. By combining standard Unified Arabic Braille with durable physical surfaces, we break visual barriers to make Islamic religious education accessible for visually impaired youth worldwide.</p>
+      </div>
+      <div class="mission-image">
+        <img src="https://img.jakpost.net/c/2017/06/08/2017_06_08_28362_1496912599._large.jpg" alt="Visually impaired student studying Arabic Braille text">
+      </div>
+    </section>
+
+    <!-- Download Catalog Section -->
+    <section id="models">
+      <h2 class="section-title">Download 3D Printable Models</h2>
+      <div class="model-grid">
+        
+        <!-- Tile 1 -->
+        <div class="card">
+          <h3>Quad Dhikr Tile (95x95mm)</h3>
+          <p>Features 4 lines of core supplications: SubhanAllah, Alhamdulillah, Allahu Akbar, and La ilaha illallah in uncontracted Arabic Braille.</p>
+          
+          <!-- Interactive 3D Model Viewer -->
+          <model-viewer src="dhikr_tile.stl" alt="3D Model of Arabic Braille Dhikr Tile" auto-rotate camera-controls></model-viewer>
+
+          <div class="btn-group">
+            <a href="dhikr_tile.stl" download class="btn btn-primary">Download STL</a>
+            <a href="dhikr_tile.scad" download class="btn btn-secondary">OpenSCAD Code</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Request Model Section -->
+    <section id="request">
+      <div class="form-container">
+        <h2 class="section-title" style="margin-bottom: 1rem;">Request a Custom Model</h2>
+        <p style="text-align: center; margin-bottom: 1.5rem; color: #4A5568;">Need a specific Du'a, Ayah, or educational tile in 3D-printable Arabic Braille? Let us know!</p>
+        <form action="https://formspree.io/f/your_form_id" method="POST">
+          <div class="form-group">
+            <label for="req-name">Your Name</label>
+            <input type="text" id="req-name" name="name" required placeholder="e.g., Brother Ahmed">
+          </div>
+          <div class="form-group">
+            <label for="req-email">Email Address</label>
+            <input type="email" id="req-email" name="email" required placeholder="name@example.com">
+          </div>
+          <div class="form-group">
+            <label for="req-details">Requested Text / Du'a (Arabic or English)</label>
+            <textarea id="req-details" name="request_details" required placeholder="Please describe the phrase or educational tile you need..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Request</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="form-container">
+        <h2 class="section-title" style="margin-bottom: 1rem;">Contact Us</h2>
+        <form action="https://formspree.io/f/your_form_id" method="POST">
+          <div class="form-group">
+            <label for="contact-name">Name</label>
+            <input type="text" id="contact-name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="contact-email">Email</label>
+            <input type="email" id="contact-email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-secondary" style="width: 100%;">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 The Oriental Braille Project. Open-source under CC-BY-4.0 License.</p>
+  </footer>
+
+</body>
+</html>
